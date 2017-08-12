@@ -1,0 +1,228 @@
+a,
+input,
+button {
+  /*清除点击阴影*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+  /*清除按钮的圆角*/
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body {
+  /*选中文字设置*/
+  margin: 0;
+  -webkit-user-select: none;
+  background: #fff;
+  overflow-x: hidden;
+}
+body * {
+  /*文字设置*/
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+body {
+  /*禁止文字缩放*/
+  -webkit-text-size-adjust: 100%;
+}
+ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  width: 15rem;
+  background: #222222;
+  box-sizing: border-box;
+  padding: 0 0.52rem;
+}
+.header .header_wrap {
+  color: #fff;
+  height: 2.32rem;
+}
+.header .header_wrap .header_logo {
+  margin-top: 0.54rem;
+  width: 4.5rem;
+  height: 1.26rem;
+  float: left;
+}
+.header .header_wrap .header_logo img {
+  display: block;
+  width: 4.5rem;
+  height: 1.26rem;
+}
+.header .header_wrap .header_right {
+  float: right;
+}
+.header .header_wrap .header_right .downNow {
+  float: left;
+  box-sizing: border-box;
+  height: 1rem;
+  color: #a82a2e;
+  padding: 0 0.56rem;
+  border: 0.04rem solid #a82a2e;
+  border-radius: 1rem;
+  font-size: 0.4rem;
+  line-height: 1rem;
+  text-decoration: none;
+  margin-top: 0.68rem;
+  margin-right: 0.48rem;
+}
+.header .header_wrap .header_right .headerMore {
+  float: left;
+  margin-top: 0.3rem;
+  font-size: 0.48rem;
+  color: #fff;
+  text-align: center;
+}
+.header .header_wrap .header_right .headerMore img {
+  display: block;
+  margin: 0 auto;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #fff;
+}
+.nav {
+  background: #fff;
+  box-sizing: border-box;
+  width: 15rem;
+  height: 1.86rem;
+  border-bottom: 1px solid #dadada;
+  padding: 0 0.54rem;
+  z-index: 1000;
+  position: relative;
+  overflow: hidden;
+}
+.nav ul {
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+.nav ul li {
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+.nav ul li a {
+  display: block;
+  text-align: center;
+  line-height: 1.86rem;
+  font-size: 0.68rem;
+  width: 3rem;
+  height: 1.86rem;
+  color: #0c0c0c;
+}
+.nav div {
+  float: left;
+  width: 1.72rem;
+  height: 1.86rem;
+}
+.nav div img {
+  width: 1.72rem;
+  height: 1.8rem;
+}
+.hand_list {
+  padding: 0 0.54rem;
+}
+.hand_list li {
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #d4d4d4;
+  position: relative;
+}
+.hand_list li .add {
+  position: absolute;
+  right: 0rem;
+  top: 1rem;
+  color: #e51620;
+  line-height: 0.88rem;
+  font-size: 0.72rem;
+}
+.hand_list li .add .zan {
+  float: left;
+  background: url(../img/guanzu.png) no-repeat;
+  width: 1.1rem;
+  height: 0.88rem;
+  background-size: cover;
+  margin-right: 0.1rem;
+}
+.hand_list li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hand_list .logo {
+  float: left;
+  width: 3rem;
+  height: 3rem;
+  border: 4px solid #fff;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  margin-top: 0.6rem;
+  margin-left: 0.6rem;
+  position: relative;
+  z-index: 99;
+}
+.hand_list .logo img {
+  width: 3rem;
+  height: 3rem;
+}
+.hand_list .title {
+  float: left;
+  padding-top: 0.76rem;
+}
+.hand_list .title h3 {
+  padding-left: 0.6rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+.hand_list .title p {
+  padding-left: 0.6rem;
+  font-size: 0.56rem;
+  color: #d5d5d5;
+}
+.hand_list .banner {
+  position: relative;
+}
+.hand_list .banner img {
+  position: relative;
+  top: -0.6rem;
+  display: block;
+  height: 7rem;
+}
+.hand_list .banner p {
+  line-height: 1.12rem;
+  font-size: 0.56rem;
+}
+.hand_list .banner p:before {
+  content: "+";
+  display: block;
+  float: left;
+  margin-right: 0.16rem;
+  line-height: 1.12rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.hand_list .addMore {
+  margin-top: 0.72rem;
+  background: #f2f2f3;
+  text-align: center;
+  border-radius: 0.16rem;
+}
+.hand_list .addMore a {
+  color: #000000;
+  font-size: 0.68rem;
+  line-height: 1.8rem;
+}
+.foot {
+  padding-top: 1.52rem;
+  background: #fff;
+}
+.foot img {
+  width: 15rem;
+}

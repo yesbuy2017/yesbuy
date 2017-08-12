@@ -1,0 +1,500 @@
+a,
+input,
+button {
+  /*清除点击阴影*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  /*选中文字设置*/
+  margin: 0;
+  -webkit-user-select: none;
+  background: #f2f2f3;
+  overflow-x: hidden;
+}
+body * {
+  /*文字设置*/
+  -webkit-user-select: none;
+}
+body {
+  /*禁止文字缩放*/
+  -webkit-text-size-adjust: 100%;
+}
+.header {
+  width: 15rem;
+  background: #222222;
+  box-sizing: border-box;
+  padding: 0 0.52rem;
+}
+.header .header_wrap {
+  color: #fff;
+  height: 2.32rem;
+}
+.header .header_wrap .header_logo {
+  margin-top: 0.54rem;
+  width: 4.5rem;
+  height: 1.26rem;
+  float: left;
+}
+.header .header_wrap .header_logo img {
+  display: block;
+  width: 4.5rem;
+  height: 1.26rem;
+}
+.header .header_wrap .header_right {
+  float: right;
+}
+.header .header_wrap .header_right .downNow {
+  float: left;
+  box-sizing: border-box;
+  height: 1rem;
+  color: #a82a2e;
+  padding: 0 0.56rem;
+  border: 0.04rem solid #a82a2e;
+  border-radius: 1rem;
+  font-size: 0.4rem;
+  line-height: 1rem;
+  text-decoration: none;
+  margin-top: 0.68rem;
+  margin-right: 0.48rem;
+}
+.header .header_wrap .header_right .headerMore {
+  float: left;
+  margin-top: 0.3rem;
+  width: 1.36rem;
+  height: 1rem;
+  font-size: 0.48rem;
+  color: #fff;
+  text-align: center;
+}
+.header .header_wrap .header_right .headerMore img {
+  display: block;
+  margin: 0 auto;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #fff;
+  background: #fff;
+}
+.content {
+  padding: 0 0.52rem;
+  background: #fff;
+  padding-bottom: 0.6rem;
+}
+.content .game_info {
+  padding: 0.8rem 0;
+}
+.content .game_info .game_logo {
+  margin-right: 0.56rem;
+  float: left;
+  width: 4.24rem;
+  height: 4.24rem;
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+.content .game_info .game_logo img {
+  width: 4.24rem;
+  height: 4.24rem;
+}
+.content .game_info .game_tit {
+  float: left;
+}
+.content .game_info .game_tit h1 {
+  font-size: 0.84rem;
+  line-height: 1.52rem;
+}
+.content .game_info .game_tit p {
+  margin: 0.1rem 0;
+  font-size: 0.56rem;
+}
+.content .game_info .game_tit p a {
+  display: inline-block;
+  padding: 0 0.16rem;
+  color: #e62426;
+  background: #f2f2f3;
+  border-radius: 0.16rem;
+}
+.content .download {
+  height: 1.8rem;
+  background: #333333;
+  color: #fff;
+  line-height: 1.8rem;
+  text-align: center;
+  font-size: 0.64rem;
+  align-items: center;
+  border-radius: 0.2rem;
+}
+.content .download i {
+  position: relative;
+  top: 0.3rem;
+  margin-right: 0.12rem;
+  display: inline-block;
+  background: url("../img/ios.png") no-repeat;
+  background-size: cover;
+  width: 1.06rem;
+  height: 1.22rem;
+  line-height: 1.8rem;
+  vertical-align: center;
+}
+.content .game_inf {
+  margin: 0.6rem 0;
+  border-left: 0.2rem solid #4c9627;
+  height: 0.84rem;
+  padding-left: 0.52rem;
+  line-height: 0.84rem;
+}
+.content .game_inf span {
+  color: #9b9ca0;
+  font-size: 0.48rem;
+  float: left;
+}
+.content .game_inf i {
+  margin: 0 0.36rem;
+  float: left;
+  color: #9b9ca0;
+  font-size: 0.48rem;
+  text-decoration: normal;
+}
+.content .game_score .score_show {
+  float: left;
+  width: 3.2rem;
+  height: 3.2rem;
+  padding-top: 0.16rem;
+  box-sizing: border-box;
+  border: 1px solid #d6d6d6;
+  border-radius: 0.2rem 0 0 0.2rem;
+  text-align: center!important;
+}
+.content .game_score .score_show div {
+  font-weight: bold;
+  display: inline-block;
+  margin: auto;
+  line-height: 2rem;
+  font-size: 1.52rem;
+  color: #057ee4;
+}
+.content .game_score .score_show p {
+  display: inline-block;
+  color: #8a8a8a;
+  font-size: 0.48rem;
+  padding: 0;
+  margin: 0;
+  margin: auto;
+}
+.content .game_score .star_submit {
+  float: left;
+  width: 6.9rem;
+  box-sizing: border-box;
+  border: 1px solid #d6d6d6;
+  border-left: 0;
+  border-radius: 0 0.2rem 0.2rem 0;
+  height: 3.2rem;
+}
+.content .game_score .star_submit .star {
+  padding: 0.48rem 0 0.48rem 0.76rem;
+}
+.content .game_score .star_submit .star span {
+  float: left;
+  width: 1.08rem;
+  height: 1rem;
+  background: url("../img/game_star.png") no-repeat;
+  background-size: cover;
+  background-position: -1.08rem 0;
+  margin-right: 0.06rem;
+}
+.content .game_score .star_submit .star .active {
+  background-position: 0 0;
+}
+.content .game_score .star_submit p {
+  text-align: center;
+  font-size: 0.5rem;
+}
+.content .game_score .score_right {
+  box-sizing: border-box;
+  border: 1px solid #d6d6d6;
+  height: 3.2rem;
+  border-radius: 0.2rem;
+  width: 3.7rem;
+  float: right;
+  text-align: center;
+}
+.content .game_score .score_right .heart {
+  padding-top: 0.6rem;
+}
+.content .game_score .score_right .heart img {
+  width: 1.4rem;
+  height: 1.08rem;
+}
+.content .game_score .score_right p {
+  color: #616166;
+  font-size: 0.52rem;
+}
+.list_head {
+  margin-top: 0.3rem;
+  padding-top: 0.3rem;
+  background: #fff;
+  padding: 0 0.52rem;
+  position: relative;
+}
+.list_head h2 {
+  font-size: 0.7rem;
+  line-height: 2rem;
+}
+.list_head h2:before {
+  content: "";
+  float: left;
+  margin-top: 0.64rem;
+  margin-right: 0.3rem;
+  width: 0.16rem;
+  height: 0.7rem;
+  background: #e4060e;
+}
+.list_head .comment_num {
+  font-size: 0.54rem;
+  position: absolute;
+  right: 0.6rem;
+  top: 0.8rem;
+}
+.list_head .comment_num span {
+  color: #e51117;
+}
+.screenshot_wrap {
+  background: #fff;
+}
+.screenshot {
+  margin: 0 0.52rem;
+  position: relative;
+  height: 7.1rem;
+  padding-bottom: 1rem;
+  overflow: hidden;
+  background: #fff;
+}
+.screenshot ul {
+  overflow: hidden;
+  position: absolute;
+  padding-right: 0.52rem;
+}
+.screenshot ul li {
+  float: left;
+  width: 12.96rem;
+  height: 7.1rem;
+}
+.screenshot ul li img {
+  width: 12.6rem;
+}
+.recommend {
+  padding: 0 0.52rem;
+  background: #fff;
+  font-size: 0.64rem;
+  line-height: 1rem;
+}
+.recommend div {
+  height: 2.7rem;
+}
+.recommend div button {
+  width: 3.12rem;
+  height: 1.12rem;
+  border: 1px solid #d4d4d4;
+  line-height: 1.12rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 0.16rem;
+  float: right;
+  top: 0.48rem;
+}
+.recommend div button:after {
+  content: "";
+  display: inline-block;
+  width: 0.72rem;
+  height: 0.44rem;
+  background: url("../img/more_txt.png") no-repeat;
+  background-size: cover;
+  margin-left: 0.12rem;
+}
+.tab {
+  margin-top: 0.3rem;
+  background: #fff;
+}
+.tab .tit {
+  height: 1.84rem;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 0 0.6rem;
+}
+.tab .tit a {
+  display: block;
+  width: 6.9rem;
+  height: 1.84rem;
+  line-height: 1.84rem;
+  float: left;
+  font-size: 0.72rem;
+  text-align: center;
+  color: #111111;
+}
+.tab .tit .active {
+  color: #eb060f;
+  border-bottom: 1px solid #eb060f;
+}
+.comment {
+  padding: 0 0.52rem;
+  background: #fff;
+  padding-bottom: 1.26rem;
+}
+.comment p {
+  font-size: 0.64rem;
+  line-height: 1.46rem;
+}
+.comment button {
+  border: 0;
+  height: 1.84rem;
+  text-align: center;
+  font-size: 0.64rem;
+  background: #f2f2f3;
+  color: #000;
+  width: 100%;
+  line-height: 1.84rem;
+  border-radius: 0.2rem;
+  margin-top: 0.4rem;
+}
+.textarea {
+  background: #fff;
+  padding: 0 0.52rem;
+}
+.textarea textarea {
+  color: #666;
+  padding: 0.3rem 0.2rem;
+  width: 100%;
+  height: 4rem;
+  resize: none;
+  border-radius: 0.2rem;
+  background: #f9f9fa;
+  font-size: 0.6rem;
+  line-height: 0.8rem;
+  box-sizing: border-box;
+}
+.textarea .enter {
+  height: 1.8rem;
+  border-bottom: 1px solid #d8d8d8;
+  line-height: 1.8rem;
+}
+.textarea .enter p {
+  float: left;
+  font-size: 0.6rem;
+}
+.textarea .enter p a {
+  font-size: 0.6rem;
+}
+.textarea .enter p span {
+  font-size: 0.6rem;
+  margin: 0 0.2rem;
+}
+.textarea .enter p img {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 0.4rem;
+  float: left;
+  border-radius: 50%;
+}
+.textarea .enter div {
+  float: right;
+}
+.textarea .enter div input {
+  position: relative;
+  top: 0.12rem;
+}
+.textarea .enter div button {
+  width: 3rem;
+  height: 1.28rem;
+  background: #e7222a;
+  border: 0;
+  border-radius: 0.16rem;
+  color: #fff;
+  font-size: 0.68rem;
+  text-align: center;
+  line-height: 1.28rem;
+}
+.comment_list {
+  padding: 0 0.6rem;
+  background: #fff;
+}
+.comment_list h4 {
+  line-height: 1.8rem;
+  font-size: 0.64rem;
+  text-align: left;
+  font-family: "微软雅黑";
+}
+.comment_list li {
+  background: #fff;
+  padding-top: 0.5rem;
+  border-bottom: 1px dotted #e7e7e7;
+}
+.comment_list li .touxiang {
+  float: left;
+  margin-right: 0.4rem;
+}
+.comment_list li .touxiang img {
+  width: 1.44rem;
+  height: 1.44rem;
+  border-radius: 0.72rem;
+  overflow: hidden;
+}
+.comment_list li .list_right {
+  width: 11.8rem;
+  float: left;
+  font-size: 0.54rem;
+  position: relative;
+}
+.comment_list li .list_right a {
+  font-size: 0.54rem;
+  display: block;
+}
+.comment_list li .list_right span {
+  font-size: 0.48rem;
+  color: #babbc4;
+}
+.comment_list li .list_right .time {
+  margin-left: 0.2rem;
+}
+.comment_list li .list_right p {
+  padding: 0.6rem 0;
+}
+.comment_list li:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.zan {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 0.42rem;
+  color: #8e8b8e;
+}
+.zan span {
+  float: left;
+  margin-right: 0.56rem;
+}
+.zan span:before {
+  content: "";
+  display: block;
+  float: left;
+  background: url(../img/zan.png) no-repeat;
+  width: 0.68rem;
+  height: 0.68rem;
+  background-size: cover;
+  margin-right: 0.1rem;
+}
+.zan a {
+  font-size: 0.42rem;
+  color: #8e8b8e;
+  float: left;
+}
+.foot {
+  padding-top: 1.52rem;
+  background: #fff;
+}
+.foot img {
+  width: 15rem;
+}
+.new {
+  position: relative;
+}

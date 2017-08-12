@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<!--<meta name="viewport" content="width=device-width initial-scale=1.0"/>-->
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<link rel="stylesheet" href="css/reset.css" />
+		<!-- uc强制竖屏 -->
+        <meta name="screen-orientation" content="portrait">
+        <!-- QQ强制竖屏 -->
+        <meta name="x5-orientation" content="portrait">
+        <!-- UC强制全屏 -->
+        <meta name="full-screen" content="yes">
+        <!-- QQ强制全屏 -->
+        <meta name="x5-fullscreen" content="true">
+        <!-- UC应用模式 -->
+        <meta name="browsermode" content="application">
+        <!-- QQ应用模式 -->
+        <meta name="x5-page-mode" content="app">
+        <!-- windows phone 点击无高光 -->
+        <meta name="msapplication-tap-highlight" content="no">
+		<link rel="stylesheet" href="css/login.css" />
+		<link rel="stylesheet" href="css/loading.css" />
+	</head>
+	<body>
+		<header class="header">
+			<a><img src="img/back_withe.png" alt="" /></a><h2>注册</h2>
+		</header>
+		<section class="content">
+			<div class="phone">
+				<form action="">
+					<input type="text" class="text" id="phone">
+					<label for="phone">手机号</label>
+				</form>
+				<p class="btn">获取验证码</p>
+			</div>
+			<div class="message"  style="display:none" >
+				<p class="yzm">验证码已经通过短信发送至<span class="userPhone">13811111111</span></p>
+				<form action="" class="clearfix">
+					<input id="yzm" class="text" type="text"/>
+					<label for="yzm">验证码</label>
+					<div class="setYzm">重发验证码<p><span class="time">10</span>s</p></div>
+					<div id="v_container">
+						
+					</div>
+					
+				</form>
+				<p class="btn">下一步</p>
+			</div>
+			<div class="information"  style="display:none">
+				<p class="yzm">编辑用户名和密码完成注册</p>
+				<form action="">
+					<div><input type="text" id="name" class="text"/><label for="name">用户名</label></div>
+					<div><input type="password" id="psw" class="text" /><label for="psw">密码</label></div>
+					<div><input type="password" id="psw02" class="text" /><label for="psw02">确认密码</label></div>
+				</form>
+				<p class="btn">完成</p>
+			</div>
+		</section>
+		<section class="prompt">
+			<div class="bg"></div>
+			<div class="box">
+				<p class="atext"></p>
+				<button>确定</button>
+			</div>
+		</section>
+		<section class="loading">
+			<div>加载中。。。</div>
+		</section>
+	</body>
+		<script src="js/gVerify.js"></script>
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<script>
+		window.onload=function(){
+			var html=document.documentElement;
+			var hWidth=html.getBoundingClientRect().width;
+			html.style.fontSize=hWidth/15+'px';
+		}
+	</script>
+	<script src="js/login.js"></script>
+	<script src="js/loading.js"></script>
+</html>

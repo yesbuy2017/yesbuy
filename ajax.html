@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="ipt"/>
+		<button type="button">发送</button>
+	</body>
+	<script src="js/jquery-1.10.1.min.js"></script>
+	<script>
+		$('button').on('click',function(){
+			$(function(){
+		$.ajax({
+			type:"get",
+			url:"http://www.tuling123.com/openapi/api",
+			dataType:"JSON",
+			jsonP:"callback",
+			data:{'key':'b8680786b6714ae4953c72d6cde9c556','info':$('#ipt').val(),'userid':'12345678'},
+			success:function(str){
+				console.log(str);
+			}
+		})
+		})
+		})
+	
+		
+	</script>
+	<!--<script src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script>
+<script>
+    var city = remote_ip_info;
+    console.log(city);
+</script>-->
+</html>

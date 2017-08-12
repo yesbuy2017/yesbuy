@@ -1,0 +1,262 @@
+.myZoe {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+}
+.myZoe .bg {
+  background: #000;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+.myZoe .box {
+  position: right;
+  left: 60%;
+  width: 60%;
+  height: 100%;
+  background: #fff;
+  float: right;
+  position: relative;
+  z-index: 666;
+}
+.myZoe .box .tx {
+  margin-top: 1.4rem;
+}
+.myZoe .box .tx img {
+  margin: 0 auto;
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+  display: block;
+  border-radius: 50%;
+}
+.myZoe .box .tx p {
+  width: 3rem;
+  margin: 0 auto;
+  margin-top: 0.4rem;
+  border-radius: 0.2rem;
+  color: #222;
+  font-size: 0.9rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  text-align: center;
+}
+.myZoe .box ul {
+  padding-left: 0.6rem;
+}
+.myZoe .box ul li {
+  float: left;
+  width: 3.7rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  text-align: center;
+  background: #222;
+  margin-right: 0.4rem;
+  margin-top: 0.7rem;
+  color: #fff;
+  font-size: 0.7rem;
+  border-radius: 0.2rem;
+}
+.image {
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.image .header {
+  width: 100%;
+  height: 1.8rem;
+  background: #222;
+  position: relative;
+}
+.image .header a {
+  position: absolute;
+  right: 0.6rem;
+  top: 0.4rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.image .imgs {
+  padding: 1rem 0 0 0.9rem;
+}
+.image .imgs li {
+  float: left;
+  border: 1px solid #aaa;
+  width: 4rem;
+  height: 4rem;
+  box-sizing: border-box;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  margin-right: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+.image .imgs li img {
+  width: 4rem;
+  height: 4rem;
+}
+.robot {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 101;
+}
+.robot .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.7;
+}
+.robot .text {
+  background: #f6f6f6;
+  position: absolute;
+  width: 13rem;
+  height: 22rem;
+  border-radius: 0.4rem;
+  top: 2rem;
+  left: 1rem;
+  overflow: hidden;
+}
+.robot .text .header {
+  background: #fff;
+  width: 100%;
+  height: 3rem;
+  position: relative;
+}
+.robot .text .header a {
+  position: absolute;
+  top: 0rem;
+  right: 0.4rem;
+}
+.robot .text .header a img {
+  width: 1rem;
+  height: 1rem;
+}
+.robot .text .header img {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 0.6rem;
+}
+.robot form {
+  background: #fff;
+  width: 13rem;
+  position: absolute;
+  left: 0rem;
+  bottom: 0rem;
+}
+.robot form input {
+  width: 11rem;
+  height: 1.6rem;
+  border: 1px solid #333;
+  border-left: 0;
+  border-bottom: 0;
+  box-sizing: border-box;
+  float: left;
+  padding: 0.4rem;
+  font-size: 0.64rem;
+  border-radius: 0 0 0 0.16rem;
+}
+.robot form button {
+  float: left;
+  border: 0;
+  background: #222;
+  color: #fff;
+  width: 2rem;
+  height: 1.6rem;
+}
+.txt_list {
+  width: 100%;
+  background: #f3f3f3;
+  box-sizing: border-box;
+  height: 17.2rem;
+  padding: 1.2rem 0.6rem 0;
+  overflow: auto;
+  position: absolute;
+  bottom: 1.6rem;
+}
+.txt_list .text_left {
+  border: 0;
+  padding: 0.4rem;
+}
+.txt_list .text_left img {
+  float: left;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+.txt_list .text_left p {
+  float: left;
+  max-width: 8rem;
+  background: #fff;
+  padding: 0.08rem 0.2rem;
+  border-radius: 0.16rem;
+  font-size: 0.64rem;
+  line-height: 1.2rem;
+}
+.txt_list .me {
+  border: 0;
+  padding: 0;
+  padding: 0.4rem;
+  height: auto;
+}
+.txt_list .me img {
+  float: right;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+.txt_list .me p {
+  max-width: 8rem;
+  background: #fff;
+  padding: 0.08rem 0.2rem;
+  border-radius: 0.16rem;
+  float: right;
+  font-size: 0.64rem;
+  line-height: 1.2rem;
+}
+.txt_list li:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.robot_icon {
+  position: fixed;
+  bottom: 1.2rem;
+  right: 0.4rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+.robot_icon img {
+  width: 2rem;
+  height: 2rem;
+}

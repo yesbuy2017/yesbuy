@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<!--<meta name="viewport" content="width=device-width initial-scale=1.0"/>-->
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<link rel="stylesheet" href="css/reset.css" />
+		<!-- uc强制竖屏 -->
+        <meta name="screen-orientation" content="portrait">
+        <!-- QQ强制竖屏 -->
+        <meta name="x5-orientation" content="portrait">
+        <!-- UC强制全屏 -->
+        <meta name="full-screen" content="yes">
+        <!-- QQ强制全屏 -->
+        <meta name="x5-fullscreen" content="true">
+        <!-- UC应用模式 -->
+        <meta name="browsermode" content="application">
+        <!-- QQ应用模式 -->
+        <meta name="x5-page-mode" content="app">
+        <!-- windows phone 点击无高光 -->
+        <meta name="msapplication-tap-highlight" content="no">
+		<link rel="stylesheet" href="css/enter.css" />
+		<link rel="stylesheet" href="css/loading.css" />
+	</head>
+	<body>
+		<section class="header">
+			<div><img src="img/enter_logo.png" alt="" /></div>
+			<div class="back"></div>
+		</section>
+		<section class="enter">
+			<form action="">
+				<div class="user clearfix"><input type="text" id="username" placeholder="用户名或者手机号" /></div>
+				<div class="password clearfix"><input type="password" id="password" placeholder="密码" /></div>
+			</form>
+			<div class="btn">
+				登录
+			</div>
+			<div class="forgetPsw">
+				忘记密码
+			</div>
+			
+			<div class="tool">
+				<img src="img/qq.png" alt="" />
+				<img src="img/weixin.png" alt="" />
+				<img src="img/weibo.png" alt="" />
+			</div>
+			<p class="new">还没有游民账号?&nbsp;<a href="login.html">注册新账号</a></p>
+		</section>
+		<section class="prompt">
+			<div class="bg"></div>
+			<div class="box">
+				<p class="atext"></p>
+				<button>确定</button>
+			</div>
+		</section>
+		<section class="loading">
+			<div>加载中。。。</div>
+		</section>
+	</body>
+	<script>
+		window.onload=function(){
+			var html=document.documentElement;
+			var hWidth=html.getBoundingClientRect().width;
+			html.style.fontSize=hWidth/15+'px';
+		}
+	</script>
+	<script src="js/jquery-1.10.1.min.js"></script>
+	<script src="js/myZoe.js"></script>
+	<script src="js/enter.js"></script>
+	<script src="js/loading.js"></script>
+</html>

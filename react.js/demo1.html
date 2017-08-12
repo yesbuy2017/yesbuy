@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="react.min.js"></script>
+    <script src="react-dom.min.js"></script>
+    <script src="browser.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/babel">
+      var myStyle = {
+        fontSize:100,
+        color:'#ff00ff'
+      }
+      ReactDOM.render(
+        <h1 style={myStyle}>Hello, world!</h1>,
+        document.getElementById('example')
+      );
+    </script>
+  </body>
+</html>

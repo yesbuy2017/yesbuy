@@ -1,0 +1,155 @@
+@r: 50rem;
+a,
+input,
+button {
+    /*清除点击阴影*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+    /*清除按钮的圆角*/
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+body {
+    /*选中文字设置*/
+    margin: 0;
+    -webkit-user-select: none;
+}
+body * {
+    /*文字设置*/
+    -webkit-user-select: none;
+    font-family: Helvetica;
+}
+body {
+    /*禁止文字缩放*/
+    -webkit-text-size-adjust: 100%;
+}
+.header{
+    padding-top:107/@r;
+    position:relative;
+    img{
+        width: 100%;
+        height: 132/@r;
+    }
+    .back{
+        position:absolute;
+        left:0;
+        top:68/@r;
+        width: 78/@r;
+        height: 40/@r;
+        background:url(../img/back.png) no-repeat;
+        background-size:cover;
+    }
+}
+.enter{
+    padding:0 72/@r;
+    
+    input{
+        margin-top:45/@r;
+        font-size:35/@r;
+        padding:18/@r 0;
+        float:right;
+        width: 540/@r;
+        border:0;
+          padding-left:10/@r;
+        border-bottom:1px solid #7c7c7c;
+    }
+    .user:before{
+        content:"";
+        display:block;
+        background:url(../img/user.png) no-repeat;
+        background-size:cover;
+        margin-top:60/@r;
+        float:left;
+        width: 47/@r;
+        height: 44/@r;
+    }
+    .password:before{
+        content:"";
+        display:block;
+        background:url(../img/password.png) no-repeat;
+        background-size:cover;
+        margin-top:80/@r;
+        float:left;
+        width: 47/@r;
+        height: 44/@r;
+    }
+    .btn{
+        background:#222222;
+        font-size:35/@r;
+        height:90/@r;
+        line-height:90/@r;
+        color:#fff;
+        text-align:center;
+        border-radius:10/@r;
+        margin-top:340/@r;
+    }
+    .forgetPsw{
+        font-size:30/@r;
+        height:90/@r;
+        line-height:90/@r;
+        color:#7c7c7c;
+        text-align:center;
+    }
+    .tool{
+        margin-top:90/@r;
+        img{
+            width: 178/@r;
+            height:137/@r;
+            margin-right:25/@r;
+        }
+        img:nth-of-type(3){
+            margin:0;
+        }
+    }
+    .new{
+        font-size:32/@r;
+        text-align:center;
+        a{
+            font-size:30/@r;
+            color:#fe3538;
+        }
+    }
+}
+.prompt {
+    display:none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    .bg {
+        background: #000;
+        opacity: 0.7;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .box {
+        width: 550/@r;
+        height: 350/@r;
+        background: #fff;
+        left: 100/@r;
+        top: 350/@r;
+        box-sizing:border-box;
+        border-radius:10/@r;
+        position: absolute;
+        padding:40/@r;
+        font-size:32/@r;
+        button{
+            position:absolute;
+            right:40/@r;
+            bottom:40/@r;
+            width: 120/@r;
+            height:60/@r;
+            background:#0091e7;
+            color:#fff;
+            font-size:32/@r;
+            border:0;
+            border-radius:8/@r;
+        }
+    }
+}

@@ -1,0 +1,163 @@
+@r: 50rem;
+a,
+input,
+button {
+    /*清除点击阴影*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+    /*清除按钮的圆角*/
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+body {
+    /*选中文字设置*/
+    margin: 0;
+    -webkit-user-select: none;
+    background: #f2f2f3;
+    background: #fff;
+}
+body * {
+    /*文字设置*/
+    -webkit-user-select: none;
+    font-family: Helvetica;
+}
+body {
+    /*禁止文字缩放*/
+    -webkit-text-size-adjust: 100%;
+}
+.header {
+    height: 90/@r;
+    background: #212121;
+    a {
+        float: left;
+        img {
+            height: 90/@r;
+        }
+    }
+    h2 {
+        float: left;
+        line-height: 90/@r;
+        color: #fff;
+        font-size: 35/@r;
+        margin-left: 60/@r;
+        font-weight: normal;
+    }
+}
+.content {
+    padding: 90/@r 74/@r 0;
+    .phone {
+        opacity: 1;
+    }
+    form {
+        position: relative;
+    }
+    label {
+        position: absolute;
+        top: 16/@r;
+        left: 16/@r;
+        font-size: 32/@r;
+        color: #999;
+    }
+    input {
+        border: 0;
+        border-bottom: 1px solid #767676;
+        padding: 16/@r;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 32/@r;
+    }
+    .btn {
+        margin-top: 80/@r;
+        height: 95/@r;
+        background: #0091e7;
+        border-radius: 8/@r;
+        color: #fff;
+        font-size: 32/@r;
+        text-align: center;
+        line-height: 95/@r;
+    }
+    .yzm {
+        font-size: 22/@r;
+    }
+    .message {
+        form {
+            position:relative;
+            margin-top: 40/@r;
+            div {
+                margin-left: 20/@r;
+                font-size: 30/@r;
+                float: left;
+                padding: 5/@r;
+                color: #a1a1a1;
+                p {
+                    text-align: center;
+                }
+            }
+        }
+        input {
+            float: left;
+            width: 280/@r;
+            border: 0;
+            border-bottom: 1px solid #767676;
+        }
+    }
+    .information {
+        div {
+            margin: 35/@r 0;
+            position: relative;
+        }
+        input {
+            padding: 16/@r;
+        }
+    }
+}
+.prompt {
+    display:none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    .bg {
+        background: #000;
+        opacity: 0.7;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .box {
+        width: 550/@r;
+        height: 350/@r;
+        background: #fff;
+        left: 100/@r;
+        top: 350/@r;
+        box-sizing:border-box;
+        border-radius:10/@r;
+        position: absolute;
+        padding:40/@r;
+        font-size:32/@r;
+        button{
+            position:absolute;
+            right:40/@r;
+            bottom:40/@r;
+            width: 120/@r;
+            height:60/@r;
+            background:#0091e7;
+            color:#fff;
+            font-size:32/@r;
+            border:0;
+            border-radius:8/@r;
+        }
+    }
+}
+#v_container{
+    position:absolute;
+    right:-50/@r;
+    top:0;
+    width: 180/@r;
+    height: 90/@r;
+}

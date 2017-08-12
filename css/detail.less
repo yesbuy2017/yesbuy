@@ -1,0 +1,510 @@
+@r: 50rem;
+a,
+input,
+button {
+    /*清除点击阴影*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+//input,
+//button {
+//  /*清除按钮的圆角*/
+//  -webkit-appearance: none;
+//  border-radius: 0;
+//}
+body {
+    /*选中文字设置*/
+    margin: 0;
+    -webkit-user-select: none;
+    background: #f2f2f3;
+    overflow-x:hidden;
+}
+body * {
+    /*文字设置*/
+    -webkit-user-select: none;
+}
+body {
+    /*禁止文字缩放*/
+    -webkit-text-size-adjust: 100%;
+}
+.header {
+    width: 750/@r;
+    background: #222222;
+    box-sizing: border-box;
+    padding: 0 26/@r;
+    .header_wrap {
+        color: #fff;
+        height: 116/@r;
+        .header_logo {
+            margin-top: 27/@r;
+            width: 225/@r;
+            height: 63/@r;
+            float: left;
+            img {
+                display: block;
+                width: 225/@r;
+                height: 63/@r;
+            }
+        }
+        .header_right {
+            float: right;
+            .downNow {
+                float: left;
+                box-sizing: border-box;
+                height: 50/@r;
+                color: #a82a2e;
+                padding: 0 28/@r;
+                border: 2/@r solid #a82a2e;
+                border-radius: 50/@r;
+                font-size: 20/@r;
+                line-height: 50/@r;
+                text-decoration: none;
+                margin-top: 34/@r;
+                margin-right: 24/@r;
+            }
+            .headerMore {
+                float: left;
+                margin-top: 15/@r;
+                width: 68/@r;
+                height: 50/@r;
+                font-size:24/@r;
+                color:#fff;
+                text-align:center;
+                img {
+                    display:block;
+                    margin:0 auto;
+                    width: 55/@r;
+                    height: 55/@r;
+                    border-radius:50%;
+                    overflow:hidden;
+                    border:1px solid #fff;
+                    background:#fff;
+                }
+            }
+        }
+    }
+}
+.content {
+    padding: 0 26/@r;
+    background: #fff;
+    padding-bottom: 30/@r;
+    .game_info {
+        padding: 40/@r 0;
+        .game_logo {
+            margin-right: 28/@r;
+            float: left;
+            width: 212/@r;
+            height: 212/@r;
+            border-radius: 30/@r;
+            overflow: hidden;
+            img {
+                width: 212/@r;
+                height: 212/@r;
+            }
+        }
+        .game_tit {
+            float: left;
+            h1 {
+                font-size: 42/@r;
+                line-height: 76/@r;
+            }
+            p {
+                margin: 5/@r 0;
+                font-size: 28/@r;
+                a {
+                    display: inline-block;
+                    padding: 0 8/@r;
+                    color: #e62426;
+                    background: #f2f2f3;
+                    border-radius: 8/@r;
+                }
+            }
+        }
+    }
+    .download {
+        height: 90/@r;
+        background: #333333;
+        color: #fff;
+        line-height: 90/@r;
+        text-align: center;
+        font-size: 32/@r;
+        align-items: center;
+        border-radius: 10/@r;
+        i {
+            position: relative;
+            top: 15/@r;
+            margin-right: 6/@r;
+            display: inline-block;
+            background: url("../img/ios.png") no-repeat;
+            background-size: cover;
+            width: 53/@r;
+            height: 61/@r;
+            line-height: 90/@r; //          margin-top:15/@r;
+            vertical-align: center;
+        }
+    }
+    .game_inf {
+        margin: 30/@r 0;
+        border-left: 10/@r solid #4c9627;
+        height: 42/@r;
+        padding-left: 26/@r;
+        line-height: 42/@r;
+        span {
+            color: #9b9ca0;
+            font-size: 24/@r;
+            float: left;
+        }
+        i {
+            margin: 0 18/@r;
+            float: left;
+            color: #9b9ca0;
+            font-size: 24/@r;
+            text-decoration: normal;
+        }
+    }
+    .game_score {
+        .score_show {
+            float: left;
+            width: 160/@r;
+            height: 160/@r;
+            padding-top: 8/@r;
+            box-sizing: border-box;
+            border: 1px solid #d6d6d6;
+            border-radius: 10/@r 0 0 10/@r;
+            text-align:center!important;
+            div {
+                font-weight:bold;
+                display:inline-block;
+                margin:auto;
+                line-height: 100/@r;
+                font-size: 76/@r;
+                color: #057ee4;
+            }
+            p{
+                display:inline-block;
+                color: #8a8a8a;
+                font-size: 24/@r;
+                padding:0;
+                margin:0;
+                margin:auto;
+            }
+        }
+        .star_submit {
+            float: left;
+            width: 345/@r;
+            box-sizing: border-box;
+            border: 1px solid #d6d6d6;
+            border-left: 0;
+            border-radius: 0 10/@r 10/@r 0;
+            height: 160/@r;
+            .star {
+                padding: 24/@r 0 24/@r 38/@r;
+                span {
+                    float: left;
+                    width: 54/@r;
+                    height: 50/@r;
+                    background: url("../img/game_star.png") no-repeat;
+                    background-size: cover;
+                    background-position: -54/@r 0;
+                    margin-right: 3/@r;
+                }
+                .active{
+                     background-position:0 0;
+                }
+            }
+            p {
+                text-align: center;
+                font-size: 25/@r;
+            }
+        }
+        .score_right {
+            box-sizing: border-box;
+            border: 1px solid #d6d6d6;
+            height: 160/@r;
+            border-radius: 10/@r;
+            width: 185/@r;
+            float: right;
+            text-align: center;
+            .heart {
+                padding-top: 30/@r;
+                img {
+                    width: 70/@r;
+                    height: 54/@r;
+                }
+            }
+            p {
+                color: #616166;
+                font-size: 26/@r;
+            }
+        }
+    }
+}
+.list_head {
+    margin-top: 15/@r;
+    padding-top: 15/@r;
+    background: #fff;
+    padding: 0 26/@r;
+    position: relative;
+    h2 {
+        font-size: 35/@r;
+        line-height: 100/@r;
+    }
+    h2:before {
+        content: "";
+        float: left;
+        margin-top: 32/@r;
+        margin-right: 15/@r;
+        width: 8/@r;
+        height: 35/@r;
+        background: #e4060e;
+    }
+    .comment_num {
+        font-size: 27/@r;
+        position: absolute;
+        right: 30/@r;
+        top: 40/@r;
+        span {
+            color: #e51117;
+        }
+    }
+}
+.screenshot_wrap {
+    background: #fff;
+}
+.screenshot {
+    margin: 0 26/@r;
+    position: relative;
+    height: 355/@r;
+    padding-bottom: 50/@r;
+    overflow: hidden;
+    background: #fff;
+    ul {
+        overflow: hidden;
+        position: absolute;
+        padding-right:26/@r;
+        li {
+            float: left;
+            width: 648/@r;
+            height: 355/@r;
+            img {
+                width: 630/@r;
+            }
+        }
+    }
+}
+.recommend {
+    padding: 0 26/@r;
+    background: #fff;
+    font-size: 32/@r;
+    line-height: 50/@r;
+    div {
+        height: 135/@r;
+        button {
+            width: 156/@r;
+            height: 56/@r;
+            border: 1px solid #d4d4d4;
+            line-height: 56/@r;
+            text-align: center;
+            background: #fff;
+            border-radius: 8/@r;
+            float: right;
+            top: 24/@r;
+        }
+        button:after {
+            content: "";
+            display: inline-block;
+            width: 36/@r;
+            height: 22/@r;
+            background: url("../img/more_txt.png") no-repeat;
+            background-size: cover;
+            margin-left: 6/@r;
+        }
+    }
+}
+.tab {
+    margin-top: 15/@r;
+    background: #fff;
+    .tit {
+        height: 92/@r;
+        border-bottom: 1px solid #d8d8d8;
+        padding: 0 30/@r;
+        a {
+            display: block;
+            width: 345/@r;
+            height: 92/@r;
+            line-height: 92/@r;
+            float: left;
+            font-size: 36/@r;
+            text-align: center;
+            color: #111111;
+        }
+        .active {
+            color: #eb060f;
+            border-bottom: 1px solid #eb060f;
+        }
+    }
+}
+.comment {
+    padding: 0 26/@r;
+    background: #fff;
+    padding-bottom: 63/@r;
+    p {
+        font-size: 32/@r;
+        line-height: 73/@r;
+    }
+    button {
+        border: 0;
+        height: 92/@r;
+        text-align: center;
+        font-size: 32/@r;
+        background: #f2f2f3;
+        color: #000;
+        width: 100%;
+        line-height: 92/@r;
+        border-radius: 10/@r;
+        margin-top: 20/@r;
+    }
+}
+.textarea {
+    background: #fff;
+    padding: 0 26/@r;
+    textarea {
+        color:#666;
+        padding: 15/@r 10/@r;
+        width: 100%;
+        height: 200/@r;
+        resize: none;
+        border-radius: 10/@r;
+        background: #f9f9fa;
+        font-size: 30/@r;
+        line-height: 40/@r;
+        box-sizing: border-box;
+    };
+    .enter {
+        height: 90/@r;
+        border-bottom: 1px solid #d8d8d8;
+        line-height: 90/@r;
+        p {
+            float: left;
+            font-size:30/@r;
+            a {
+                font-size: 30/@r;
+            }
+            span {
+                 font-size: 30/@r;
+                margin: 0 10/@r;
+            }
+             img{
+                width: 80/@r;
+                height:80/@r;
+                margin-right:20/@r;
+                float:left;
+                border-radius:50%;
+            }
+        }
+        div {
+            float: right;
+            input {
+                position: relative;
+                top: 6/@r;
+            }
+            button {
+                width: 150/@r;
+                height: 64/@r;
+                background: #e7222a;
+                border: 0;
+                border-radius: 8/@r;
+                color: #fff;
+                font-size: 34/@r;
+                text-align: center;
+                line-height: 64/@r;
+            }
+        }
+    }
+}
+.comment_list {
+    padding: 0 30/@r;
+    background: #fff;
+    h4 {
+        line-height: 90/@r;
+        font-size: 32/@r;
+        text-align: left;
+        font-family: "微软雅黑";
+    }
+    li {
+        background:#fff;
+        padding-top:25/@r;
+        border-bottom:1px dotted #e7e7e7;
+        .touxiang {
+            float: left;
+            margin-right:20/@r;
+            img {
+                width: 72/@r;
+                height: 72/@r;
+                border-radius: 36/@r;
+                overflow: hidden;
+            }
+        }
+         .list_right{
+            width: 590/@r;
+            float:left;
+            font-size:27/@r;
+            position:relative;
+            a{
+                font-size:27/@r;
+                display:block;
+            }
+            span{
+                font-size:24/@r;
+                color:#babbc4;
+            }
+            .time{
+                margin-left:10/@r;
+            }
+            p{
+                padding:30/@r 0;
+            }
+        }
+      
+    }
+    li:after{
+        content:"";
+        display:block;
+        clear:both;
+    }
+}
+.zan{
+    position:absolute;
+    right:0;
+    top:0;
+    font-size:21/@r;
+     color:#8e8b8e;
+     span{
+         float:left;
+         margin-right:28/@r;
+     }
+     span:before{
+         content:"";
+         display:block;
+         float:left;
+         background:url(../img/zan.png) no-repeat;
+         width: 34/@r;
+         height:34/@r;
+         background-size:cover;
+         margin-right:5/@r;
+     }
+    a{
+        font-size:21/@r;
+        color:#8e8b8e;
+         float:left;
+    }
+}
+.foot{
+    padding-top:76/@r;
+    background:#fff;
+    img{
+        width: 750/@r;
+    }
+}
+.new{
+    position:relative;
+}
